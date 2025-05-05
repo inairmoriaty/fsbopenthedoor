@@ -1,0 +1,87 @@
+/* 设置背景色为黑色，文字为白色 */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* 设置大标题和子标题 */
+  h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 span:first-child {
+    color: white;  /* "欢迎来到" 设置为白色 */
+}
+
+h1 span:last-child {
+    color: black;  /* "COD乙女粮仓" 设置为黑色 */
+    background-color: #fca000;  /* 背景设为橙黄色 */
+    padding: 0 10px;  /* 给背景加一些内边距 */
+}
+  
+  h2 {
+    font-size: 2em;
+    color: #fca000; /* 黄色 */
+    margin-bottom: 15px;
+  }
+  
+  /* 设置链接的样式 */
+  a {
+    color: #f5f5f5; /* 黄色 */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 页面布局 */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .from-client {
+    color: #f67398;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px dotted #ffaacb;
+    cursor: default;
+  }
+  
+  .card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .card:hover {
+    background-color: #444;
+  }
+  
+  button {
+    background-color: #fcb600; /* 黄色 */
+    color: #000;
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #fcb600;
+  }
+  

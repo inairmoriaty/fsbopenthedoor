@@ -1,0 +1,54 @@
+.from-client {
+    color: #f67398;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px dotted #ffaacb;
+    cursor: default;
+  }
+ 
+  p {
+    text-indent: 2em !important;
+  }
+  
+
+  p {
+    text-indent: 2em !important;  /* 强制首行缩进两字 */
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }  
+
+  .teaser {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff6347; /* 可以修改为你喜欢的颜色 */
+  }
+
+  .markdown-paragraph {
+    text-indent: 2em; /* 设置首行缩进 */
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+
+  /* 普通人格的样式 */
+  .unnormal {
+    font-family: 'Arial', sans-serif;
+    color: #8f1717;
+    font-weight: bold;
+}
+
+/* 第一重人格的样式 */
+.persona-1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: black;  /* 设置字体颜色为黑色 */
+  font-weight: bold;  /* 设置字体加粗 */
+  text-decoration: underline;  /* 设置文本下划线 */
+}  
+
+/* 第二重人格的样式 */
+.persona-2 {
+  font-family: 'Georgia', serif;
+  color: #3d7dfb;  /* 绿色 */
+}
+
+  
+  
