@@ -50,5 +50,24 @@
   color: #3d7dfb;  /* 绿色 */
 }
 
+.nav-button {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.nav-button:hover {
+  background-color: #e0533d;
+}
+
+.from-client {
+  color: #f67398;
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 1px dotted #ffaacb;
+  cursor: default;
+}
+
   
   

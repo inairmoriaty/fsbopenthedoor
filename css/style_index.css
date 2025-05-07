@@ -85,3 +85,14 @@ h1 span:last-child {
     background-color: #fcb600;
   }
   
+  .nav-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  .nav-button:hover {
+    background-color: #e0533d;
+  }
+  

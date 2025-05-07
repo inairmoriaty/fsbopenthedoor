@@ -21,18 +21,18 @@
   </style>
 </head>
 <body>
-  <h2>🔒 密码验证 · 《医闹》</h2>
+  <h2>🔒 密码验证 · 《俘心游戏4》</h2>
   <p>请输入访问口令：</p>
   <input type="password" id="passwordInput" placeholder="输入密码">
   <button onclick="checkPassword()">进入</button>
 
   <script>
     function checkPassword() {
-      const correctPassword = "1295";  // 这里填写对应作品的密码
+      const correctPassword = "6717";  // 这里填写对应作品的密码
       const userInput = document.getElementById("passwordInput").value;
 
       if (userInput === correctPassword) {
-        window.location.href = "bloodylove.html"; // 填入正文页面的文件名
+        window.location.href = "../commission_files/mindgame4.html"; // 填入正文页面的文件名
       } else {
         alert("密码不对，请联系对应单主！");
       }
