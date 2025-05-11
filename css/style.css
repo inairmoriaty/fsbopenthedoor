@@ -69,5 +69,12 @@
   cursor: default;
 }
 
+.diary {
+  font-family: 'Comic Sans MS', 'Bradley Hand', 'Lucida Handwriting', cursive;
+  font-style: italic;
+  color: #444; /* 可选，让它比正文更柔和一点 */
+  line-height: 1.8;
+}
+
   
   
