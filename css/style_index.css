@@ -84,21 +84,10 @@ h1 span:last-child {
   button:hover {
     background-color: #fcb600;
   }
-  
-  .nav-button {
-    background-color: #ff6347;
-    color: white;
-    padding: 10px 16px;
-    text-decoration: none;
-    border-radius: 6px;
-  }
-  .nav-button:hover {
-    background-color: #e0533d;
-  }
-  
+    
   .nav-button {
   display: inline-block;
-  background-color: #ffcc00;
+  background-color: #ffa500;
   color: #000;
   padding: 8px 14px;
   border-radius: 6px;
@@ -108,5 +97,5 @@ h1 span:last-child {
   transition: background-color 0.3s ease;
 }
 .nav-button:hover {
-  background-color: #ffa500;
+  background-color: #ffcc00;
 }
