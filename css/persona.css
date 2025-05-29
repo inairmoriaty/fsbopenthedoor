@@ -1,20 +1,66 @@
 /* 普通人格的样式 */
-.normal {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-  }
+.persona-0 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: black;
+}
+.persona-0::before {
+  content: "🐻 ";
+  margin-right: 4px;
+}
   
  /* 第一重人格的样式 */
 .persona-1 {
-    font-family: 'Courier New', Courier, monospace;
-    color: black;  /* 设置字体颜色为黑色 */
-    font-weight: bold;  /* 设置字体加粗 */
-    text-decoration: underline;  /* 设置文本下划线 */
-  }  
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: black;
+}
+.persona-1::before {
+  content: "🧠 ";
+  margin-right: 4px;
+}
   
   /* 第二重人格的样式 */
-  .persona-2 {
-    font-family: 'Georgia', serif;
-    color: #3d7dfb;  /* 绿色 */
-  }
-  
+.persona-2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: black;
+}
+.persona-2::before {
+  content: "🗣️ ";
+  margin-right: 4px;
+
+}
+.persona-3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: black;
+}
+.persona-3::before {
+  content: "😈 ";
+  margin-right: 4px;
+}
+
+.unnormal {
+  font-family: 'Arial', sans-serif;
+  color: #ae0c0c;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+
+/* 信息类聊天风格 */
+.message {
+  font-family: 'Lantinghei SC', sans-serif;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0.2em 0;
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0; /* ✅ 外圈细边框 */
+  border-left: 4px solid #c2bfbf;
+  padding: 8px 12px;
+  border-radius: 6px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>🔐 解锁《作品标题》</title>
+  <style>
+    body {
+      background-color: #1e1b2e;
+      color: #f8f4f9;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      margin-top: 20vh;
+    }
+    input, button {
+      padding: 0.5em 1em;
+      font-size: 1em;
+      border-radius: 8px;
+      border: none;
+      margin: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔒 密码验证 · 《Seeking》</h2>
+  <p>请输入访问口令：</p>
+  <input type="password" id="passwordInput" placeholder="输入密码">
+  <button onclick="checkPassword()">进入</button>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "1295";  // 这里填写对应作品的密码
+      const userInput = document.getElementById("passwordInput").value;
+
+      if (userInput === correctPassword) {
+        window.location.href = "../commission_files/seeking.html"; // 填入正文页面的文件名
+      } else {
+        alert("密码不对，请联系对应单主！");
+      }
+    }
+  </script>
+</body>
+</html>
