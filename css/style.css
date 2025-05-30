@@ -60,6 +60,20 @@
 .nav-button:hover {
   background-color: #e0533d;
 }
+.chapter-end-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto 40px;
+  max-width: 600px;
+}
+
+.chapter-end-nav a {
+  background-color: #ff5c5c;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
 
 .from-client {
   color: #f67398;
