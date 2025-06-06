@@ -4,7 +4,7 @@ import re
 import difflib
 
 # === 基本设置 ===
-file_path = r"/Users/inairmoriaty/Desktop/moriaty/moriaty/脑缠笔记本/COD/导出/sand.txt"
+file_path = r"/Users/inairmoriaty/Desktop/moriaty/moriaty/脑缠笔记本/COD/导出/tame7.txt"
 
 # === AI痕迹模式 ===
 ai_english_pattern = re.compile(r"\s[A-Z][a-zA-Z]+\s")  # 空格包裹英文
