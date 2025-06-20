@@ -4,7 +4,7 @@ import re
 import difflib
 
 # === 基本设置 ===
-file_path = r"/Users/inairmoriaty/Desktop/moriaty/moriaty/脑缠笔记本/COD/导出/tame7.txt"
+file_path = r"/Users/inairmoriaty/Desktop/moriaty/moriaty/脑缠笔记本/COD/导出/seeking2.txt"
 
 # === AI痕迹模式 ===
 ai_english_pattern = re.compile(r"\s[A-Z][a-zA-Z]+\s")  # 空格包裹英文
@@ -63,23 +63,24 @@ else:
     print("✔️ 没有发现完全重复的句子")
 
 # ==== 高相似度重复句检测 ====
-print("\n🧩 检测相似重复句子（相似度 > 90%）:")
-checked_pairs = set()
-similar_pairs = []
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+print("\n🧠 检测结构性重复句（TF-IDF + 余弦相似度）")
+
+vectorizer = TfidfVectorizer().fit_transform(sentence_list)
+similarity_matrix = cosine_similarity(vectorizer)
+
+found = False
+threshold = 0.8  # 可以调节灵敏度
 
 for i in range(len(sentence_list)):
     for j in range(i + 1, len(sentence_list)):
-        s1, s2 = sentence_list[i], sentence_list[j]
-        pair_key = tuple(sorted([s1, s2]))
-        if pair_key in checked_pairs:
-            continue
-        similarity = difflib.SequenceMatcher(None, s1, s2).ratio()
-        if similarity > 0.9:
-            similar_pairs.append((s1, s2, round(similarity * 100, 2)))
-        checked_pairs.add(pair_key)
+        if similarity_matrix[i][j] > threshold:
+            print(f"\n🔁 相似度 {round(similarity_matrix[i][j]*100, 2)}% ：")
+            print(f"➤『{sentence_list[i]}』")
+            print(f"➤『{sentence_list[j]}』")
+            found = True
 
-if similar_pairs:
-    for s1, s2, score in similar_pairs:
-        print(f"\n🔶 相似度 {score}%：\n① {s1}\n② {s2}")
-else:
-    print("✔️ 没有发现高相似度重复句")
+if not found:
+    print("✅ 没有发现结构重复句")
